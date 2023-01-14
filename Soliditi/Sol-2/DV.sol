@@ -17,11 +17,47 @@ contract dataTypes{
     }
 
     //stateVariable  
-    int public uintvalue = 1
+    int public intvalue = 1
     uint public uintValue = 1;
     uint256 public uintvalue = 1 
+    uint8 public uintvalue = 1
+
+    //local variable
     function getuintValue() public pure returns(uint){
         uint value =1;
         return value;
     }
+
+    //strings: they are data types can also be stored in a smart contract
+    //state variable
+    string public stringvalue = "Hello, Netherlands"
+
+//local variable
+    function getValue() public pure returns(uint){
+        string value = "Hello, Netherlands";
+        return value;
+    }
+
+    //bytes32
+    //state variable
+    bytes32 public bytes32 = "Hello Netherlands",
+
+    //local variable
+     function getValue() public pure returns(uint){
+        bytes32 value = "Hello, Netherlands";
+        return value;
+    }
+
+    //state variable
+    //address: Every blockchain has an address
+    address public addressValue = 0x5a566659C000009E8494940
+
+    //creating custom Data structures
+
+    struct MyStruct {
+        uint intValue;
+        string stringvalue;
+    }
+
+    MyStruct public myStruct = MyStruct(1, "Hello, Netherlands!");
 }
