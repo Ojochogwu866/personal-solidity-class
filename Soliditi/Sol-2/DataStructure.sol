@@ -3,7 +3,7 @@ pragma solidity >=0.7.0 <0.9.0;
 
 contract dataTypes{
      /**
-       VARIABLES
+     VARIABLES
      Variables are of two types.
      Local and State Variables
      * State variables are stored and exist on the blockchain.
@@ -11,13 +11,13 @@ contract dataTypes{
      */
 
     //stateVariables  
-    int public myInt = 1;
-    uint public myUint = 1;
-    uint256 public myUint256 = 1; 
-    uint8 public myUint8 = 1;
-    string public myString = "Netherlands";    //strings: they are data types can also be stored in a smart contract
+    int public myInt = 1; //integer
+    uint public myUint = 1; //unsigned integer
+    uint256 public myUint256 = 1; //256-bit unsigned integer
+    uint8 public myUint8 = 1; //8-bit unsigned integer
+    string public myString = "Hello, Netherlands";    //strings
     bytes32 public myBytes32 = "Hello Netherlands";  //bytes32
-    address public amyAddress = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;  //address: Every blockchain has an address
+    address public amyAddress = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;  //address
 
 
 
