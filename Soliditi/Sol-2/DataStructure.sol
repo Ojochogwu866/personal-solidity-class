@@ -15,7 +15,7 @@ contract dataTypes{
     uint public myUint = 1;
     uint256 public myUint256 = 1; 
     uint8 public myUint8 = 1;
-    string public myString = "Hello, Netherlands";    //strings: they are data types can also be stored in a smart contract
+    string public myString = "Netherlands";    //strings: they are data types can also be stored in a smart contract
     bytes32 public myBytes32 = "Hello Netherlands";  //bytes32
     address public amyAddress = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;  //address: Every blockchain has an address
 
@@ -27,11 +27,12 @@ contract dataTypes{
         return value;
     }
    //local variable
-    function getValue() public pure returns(string){  
+    function getStringValue() public pure returns(string memory){ 
+        string memory value = "Hello, Netherlands";
         return value;
     }
     //local variable
-     function getValue() public pure returns(uint){
+     function getBytesValue() public pure returns(bytes32){
         bytes32 value = "Hello, Netherlands";
         return value;
     }
